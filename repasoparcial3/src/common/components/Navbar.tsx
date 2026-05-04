@@ -17,6 +17,11 @@ export default function Navbar() {
                     <ul className="menu menu-horizontal px-1">
 
                         <li>
+                            <Link href="/">
+                                Inicio
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/contact">
                                 Contacto
                             </Link>

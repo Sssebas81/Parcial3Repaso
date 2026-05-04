@@ -1,6 +1,9 @@
+import Navbar from "@/common/components/Navbar";
+
 export default function Page() {
   return (
-    <main className="max-w-xl mx-auto p-6">
+    <main className="">
+      <Navbar/>
       <img
         src="https://www.nbcstore.com/cdn/shop/products/SHREK-SS-63-MF1.jpg?v=1693905182"
         alt="comida"
