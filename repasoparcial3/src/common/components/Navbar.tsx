@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Navbar() {
     return(
-        <div className="max-lg:collapse bg-base-200 lg:mb-48 shadow-sm w-full rounded-md">
+        <div className="max-lg:collapse bg-base-200 lg:mb-10 shadow-sm w-full rounded-md">
             <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
             <label htmlFor="navbar-1-toggle" className="fixed inset-0 hidden max-lg:peer-checked:block"></label>
             <div className="collapse-title navbar">
@@ -13,7 +15,12 @@ export default function Navbar() {
 
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><button>Item 1</button></li>
+
+                        <li>
+                            <Link href="/contact">
+                                Contacto
+                            </Link>
+                        </li>
                         <li>
                             <details>
                                 <summary>Parent</summary>
@@ -23,7 +30,11 @@ export default function Navbar() {
                                 </ul>
                             </details>
                         </li>
-                        <li><button>Item 3</button></li>
+                        <li>
+                            <Link href="/fotos">
+                                Fotos
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="navbar-end">
