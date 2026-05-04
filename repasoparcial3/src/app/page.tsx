@@ -2,16 +2,16 @@
 import { products } from "@/utils/product.util";
 import ProductCard from "@/common/components/ProductCard"; 
 import { useState } from "react";
-import { categories } from '../utils/product.util';
 import Filter from "@/common/components/Filter";
+import Counter from "@/common/components/Counter";
 
 export default function Home(){
 
     const [selectedCategory, setSelectedCategory] = useState("all");
-    const categories = ["all", ...new Set(products.map(p => p.category))];
+    const categories = ["Todos", ...new Set(products.map(p => p.category))];
 
     const filteredProducts =
-    selectedCategory === "all"
+    selectedCategory === "Todos"
       ? products
       : products.filter(p => p.category === selectedCategory);
 
@@ -19,6 +19,8 @@ export default function Home(){
 
 
         <main className="max-w-7xl mx-auto px-4 py-8">
+
+            <Counter/>
 
             <h1 className="text-4xl font-bold text-center mb-8">
                 our menu 
