@@ -4,13 +4,10 @@ interface FilterProps {
   onSelectCategory: (category: string) => void;
 }
 
-export default function Filter({
-  categories,
-  selectedCategory,
-  onSelectCategory,
-}: FilterProps) {
+export default function Filter({ categories, selectedCategory, onSelectCategory,}: FilterProps) {
   return (
     <div className="flex gap-2 my-4">
+      
       {categories.map((category) => (
         <button
           key={category}
