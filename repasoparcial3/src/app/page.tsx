@@ -11,10 +11,7 @@ export default function Home(){
     const [selectedCategory, setSelectedCategory] = useState("all");
     const categories = ["Todos", ...new Set(products.map(p => p.category))];
 
-    const filteredProducts =
-    selectedCategory === "Todos"
-      ? products
-      : products.filter(p => p.category === selectedCategory);
+    const filteredProducts = selectedCategory === "Todos" ? products : products.filter(p => p.category === selectedCategory);
 
     return(
 
