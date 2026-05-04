@@ -3,6 +3,8 @@ import { products } from "@/utils/product.util";
 import ProductCard from "@/common/components/ProductCard"; 
 import { useState } from "react";
 import Filter from "@/common/components/Filter";
+import Counter from "@/common/components/Counter";
+import Navbar from "@/common/components/Navbar";
 
 export default function Home(){
 
@@ -19,6 +21,7 @@ export default function Home(){
 
         <main className="max-w-7xl mx-auto px-4 py-8">
 
+            <Navbar/>
 
             <h1 className="text-4xl font-bold text-center mb-8">
                 Our Menu 
