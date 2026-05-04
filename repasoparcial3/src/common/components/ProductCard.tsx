@@ -1,4 +1,4 @@
-import { SimpleProduct } from "../../../utils/product.util";
+import { SimpleProduct } from "../../utils/product.util";
 
 interface ProductCardProps {
     product: SimpleProduct

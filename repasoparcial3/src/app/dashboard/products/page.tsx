@@ -1,5 +1,5 @@
 import { products } from "@/utils/product.util";
-import ProductCard from "../../common/components/ProductCard"
+import ProductCard from "../../../common/components/ProductCard"
 
 export default function Home(){
     return(
