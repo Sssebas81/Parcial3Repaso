@@ -1,7 +1,12 @@
+"use client"
 import Link from "next/link";
 import CartIcon from "./CartIcon";
 import ThemeToggle from "./ThemeToggle";
+import { useRouter } from "next/navigation";
 export default function Navbar() {
+
+    const router = useRouter();
+
     return(
         <div className="max-lg:collapse bg-base-200 lg:mb-10 shadow-sm w-full rounded-md">
             <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
@@ -18,14 +23,14 @@ export default function Navbar() {
                     <ul className="menu menu-horizontal px-1">
 
                         <li>
-                            <Link href="/">
+                            <button onClick={() => router.push("/")}>
                                 Inicio
-                            </Link>
+                            </button>
                         </li>
                         <li>
-                            <Link href="/contact">
+                            <button onClick={() => router.push("/contact")}>
                                 Contacto
-                            </Link>
+                            </button>
                         </li>
                         <li>
                             <details>
@@ -37,9 +42,9 @@ export default function Navbar() {
                             </details>
                         </li>
                         <li>
-                            <Link href="/fotos">
+                            <button onClick={() => router.push("/fotos")}>
                                 Fotos
-                            </Link>
+                            </button>
                         </li>
                     </ul>
                 </div>
