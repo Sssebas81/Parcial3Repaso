@@ -20,11 +20,11 @@ export default function ThemeToggle() {
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
   };
-
+// depende de como tengan la config de su pc lo pueden cambiar en el texto para que se adapte a la config de su pc 
   return (
     <label className="flex items-center gap-2 cursor-pointer">
 
-      Modo oscuro
+      Modo calro
 
       <input
         type="checkbox"
@@ -33,7 +33,7 @@ export default function ThemeToggle() {
         onChange={toggleTheme}
       />
 
-      Modo claro
+      Modo oscuro
 
     </label>
   );
