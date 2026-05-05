@@ -11,9 +11,6 @@ export default function RootLayout({ children }) {
           {children}
         </main>
 
-        {/* 👇 Footer global */}
-        <Footer />
-
       </body>
     </html>
   );
