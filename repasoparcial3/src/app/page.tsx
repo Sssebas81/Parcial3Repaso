@@ -8,7 +8,7 @@ import Navbar from "@/common/components/Navbar";
 
 export default function Home(){
 
-    const [selectedCategory, setSelectedCategory] = useState("all");
+    const [selectedCategory, setSelectedCategory] = useState("Todos");
     const categories = ["Todos", ...new Set(products.map(p => p.category))];
 
     const filteredProducts = selectedCategory === "Todos" ? products : products.filter(p => p.category === selectedCategory);
