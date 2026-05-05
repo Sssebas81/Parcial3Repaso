@@ -24,7 +24,7 @@ export default function ThemeToggle() {
   return (
     <label className="flex items-center gap-2 cursor-pointer">
 
-      🌙
+      Modo oscuro
 
       <input
         type="checkbox"
@@ -33,7 +33,7 @@ export default function ThemeToggle() {
         onChange={toggleTheme}
       />
 
-      ☀️
+      Modo claro
 
     </label>
   );
