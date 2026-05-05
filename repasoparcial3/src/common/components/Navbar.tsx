@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CartIcon from "./CartIcon";
+import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
     return(
         <div className="max-lg:collapse bg-base-200 lg:mb-10 shadow-sm w-full rounded-md">
@@ -45,6 +46,7 @@ export default function Navbar() {
                 <div className="navbar-end">
                     <input type="text" placeholder="Search" className="input input-bordered w-64 lg:w-auto" />
                     <CartIcon />
+                    <ThemeToggle />
                 </div>
             </div>
 
