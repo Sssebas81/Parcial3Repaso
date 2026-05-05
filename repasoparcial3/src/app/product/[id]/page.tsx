@@ -1,5 +1,6 @@
 'use client';
 
+import Counter from '@/common/components/Counter';
 import { getProductById } from '@/utils/product.util';
 import { notFound, useRouter } from 'next/navigation';
 import { use } from 'react';
@@ -39,6 +40,8 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
                     <p className="text-3xl font-bold text-primary">${product.price.toLocaleString()}</p>
                 </div>
             </div>
+
+            <Counter/>
         </main>
     );
 }
